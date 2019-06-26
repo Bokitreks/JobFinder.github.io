@@ -1,0 +1,103 @@
+<rss version="2.0">
+<channel>
+<title>Job Finder | Home</title>
+<link>index.html</link>
+<description>
+Welcome to the Job Finder home page. We will help you find a job !
+</description>
+<item>
+<title>Job Finer | About Us</title>
+<link>aboutus.html</link>
+<description>
+Read everything about our company and what we do. Also check out the author.
+</description>
+</item>
+<item>
+<title>Job Finer | Contact Us</title>
+<link>contact.html</link>
+<description>Contact us!</description>
+</item>
+<item>
+<title>Job Finer | Jobs</title>
+<link>contact.html</link>
+<description>
+Explore jobs
+</description>
+</item>
+<item>
+<title>Job Finer | Tips</title>
+<link>tips.html</link>
+<description>
+Check out some tips!
+</description>
+</item>
+<item>
+<title>Job Finer | Insurance</title>
+<link>insurance.html</link>
+<description>See the insurance</description>
+</item>
+<item>
+<title>Job Finer | IT</title>
+<link>it.html</link>
+<description>
+IT business
+</description>
+</item>
+<item>
+<title>Job Finer | Construction</title>
+<link>cons.html</link>
+<description>
+Construction business
+</description>
+</item>
+<item>
+<title>Job Finer | Fast Food</title>
+<link>fast.html</link>
+<description>
+Fast food business
+</description>
+</item>
+<item>
+<title>Job Finder | Servicer</title>
+<link>servicer.html</link>
+<description>
+Servicer business
+</description>
+</item>
+<item>
+<title>Job Finder | Fitnes Coach</title>
+<link>fit.html</link>
+<description>
+Fitnes Coach business
+</description>
+</item>
+<item>
+<title>Job Finder | Driver</title>
+<link>driver.html</link>
+<description>
+Driver business
+</description>
+</item>
+<item>
+<title>Job finder | Electricity</title>
+<link>bolt.html</link>
+<description>
+Electricity business
+</description>
+</item>
+<item>
+<title>Job Finder | Sargon</title>
+<link>sea.html</link>
+<description>
+Sea business
+</description>
+</item>
+<item>
+<title>Job Finer | Delivery</title>
+<link>delivery.html</link>
+<description>
+Delivery business
+</description>
+</item>
+</channel>
+</rss>

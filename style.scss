@@ -1,0 +1,948 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+
+$prva: 1400px;
+$druga: 1260px;
+$treca: 992px;
+$cetvrta: 768px;
+$peta: 534px;
+
+
+@mixin prva {
+    @media (max-width: #{$prva}){
+        @content;
+    }
+}
+
+@mixin druga {
+    @media (max-width: #{$druga}){
+        @content;
+    }
+}
+
+
+@mixin treca {
+    @media (max-width: #{$treca}){
+        @content;
+    }
+}
+
+@mixin cetvrta {
+    @media (max-width: #{$cetvrta}){
+        @content;
+    }
+}
+
+@mixin peta {
+    @media (max-width: #{$peta}){
+        @content;
+    }
+}
+
+
+
+
+ body {
+
+    position: relative;
+    
+    font-family: 'Pridi', serif;
+p {
+	border-width: 4px 0;
+	
+  
+  span {
+
+  	font-family:"Oswald", sans-serif;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+	  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+
+
+	  -webkit-transform: translate3d(0,0,0);
+      -webkit-backface-visibility: hidden;
+      
+      
+
+  }
+}
+
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.li1{
+    text-decoration: none;
+    margin-left:1em;
+    &:hover{
+        color:tomato;
+    }
+}
+.wall{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/wall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding:0px;
+
+  .cover{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display:flex;
+      justify-content: center;
+      align-items: center;
+
+      .box{
+          margin:0px auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          h1{
+              font-size:4em;
+              padding:3% 0%;
+
+
+              @include cetvrta{
+                    font-size: 3em;
+              }
+
+              @include peta{
+                  font-size:1.7em;
+              }
+
+          }
+          .dugme{
+              color:whitesmoke;
+              width:15%;
+              height:40px;
+              display:flex;
+              justify-content: center;
+              align-items: center;
+
+              @include cetvrta{
+                font-size: 0.8em;
+                width: 25%;
+          }
+          @include peta{
+              font-size:0.7em;
+          }
+
+          }
+      }
+  }
+}
+.nav1{
+    position: fixed;
+    top:0px;
+}
+.karte{
+    margin:5% 0%;
+
+    a{
+        text-decoration: none;
+        transition:1s;
+        color:orange;
+
+
+        &:hover{
+            background-color: black;
+            
+        }
+       
+
+    
+
+    .link2{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        &:hover p {
+            transform:scale(1.2);
+        }
+
+        p{
+            margin:0px;
+            transition:1s;
+        }
+
+        
+        
+        
+    }
+}
+
+}
+
+.fluid1{
+    margin: 10% 0%;
+}
+  
+
+.kartica{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#text4{
+    font-size:1.5em;
+    color:whitesmoke;
+}
+#text5{
+      font-size:1.2em;
+      padding: 5%;
+      text-align: justify;
+
+}
+.slika3{
+    width:100%;
+    height: 100%;
+
+    .slika3s{
+        max-width: 100%;
+        height:auto;
+    }
+}
+.modalb{
+    background-color: orange;
+    color:whitesmoke;
+    display: block;
+    margin: 0px auto;
+    width: 15%;
+
+
+    
+    
+}
+
+
+.cc2{
+    background-color: black;
+    position: absolute;
+
+    .colFooter1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ul{
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 0px;
+
+                li{
+
+                    a{
+                        text-decoration: none;
+                        color: whitesmoke;
+                        font-size: 1.4em;
+                        transition: 0.7s;
+
+                        &:hover{
+                            color: tomato;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .colFooter2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                font-size: 2em;
+                padding-top: 15%;
+                color: tomato;
+            }
+
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 15%;
+
+                li{
+                    margin-top: 13%;
+
+                    a{
+                        text-decoration: none;
+                        color: whitesmoke;
+                        font-size: 1.3em;
+                        transition: 0.7s;
+
+                        &:hover{
+                            color: tomato;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+}
+
+body{
+
+    .aboutus{
+        margin: 5% 0%;
+
+        .rowGap{
+            margin: 10% 0%;
+
+            .ab1{
+
+                h2{
+                    text-align: center;
+                    padding: 3% 0%;
+                    font-size: 3em;
+                }
+
+                @include peta{
+                    font-size:0.75em;
+                }
+
+                p{
+                    padding: 3%;
+                    text-align: justify;
+                }
+
+                @include treca{
+                    margin-top:5%;
+                }
+            }
+
+            .ab2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .jobPic{
+                    width: 80%;
+                    height: 100%;
+                    align-self: center;
+
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                        @include treca{
+                            margin:0px auto;
+                    }
+
+                       
+                    }
+                    
+                        
+                    @include treca{
+                        display:flex;
+                        
+                }
+                        
+                    }
+
+                   
+                }
+                
+        }
+
+        .aboutal{
+
+            h2{
+                text-align: center;
+                padding: 2% 0%;
+                font-size: 3em;
+            }
+
+            p{
+                padding: 4% 0%;
+                text-align: justify;
+            }
+            @include cetvrta{
+                font-size: 0.8em;
+            }
+        }
+
+        h2{
+            text-align: center;
+            padding-top: 5%;
+            font-size: 4em;
+        }
+
+        .rowFinal{
+            
+            .socialAb{
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+                    color: tomato;
+                    font-size: 2em;
+                }
+
+                @include treca{
+                    margin:0px auto;
+                    width:60%;
+                    margin-bottom: 10%;
+                }
+            }
+        }
+        @include peta{
+            margin-top:15%;
+        }
+    }
+}
+
+body{
+
+    .jobs{
+        margin: 7% 0%;
+        margin-bottom: 10%;
+
+        h2{
+            text-align: center;
+            font-size: 4em;
+        }
+
+        .jobs2{
+            margin: 10% 0%;
+
+            .jobs3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    width: 40%;
+                    transition: 0.6s;
+                    box-shadow: 0px 0px 20px rgba(153,153,153,0.4);
+
+                    &:hover{
+                        box-shadow: 0px 0px 20px rgba(153,153,153,1);
+                    }
+
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    p{
+                        font-size: 1.4em;
+                        padding: 5% 0%;
+                    }
+
+                    i{
+                        font-size: 3em;
+                        padding: 10% 0%;
+                    }
+                }
+            }
+
+            @include treca{
+                margin-bottom: 10%;
+            }
+            }
+
+           
+        }
+    }
+}
+
+body{
+
+    .it1{
+        margin: 10% 0%;
+
+        
+
+            .it3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .idPic{
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    background-color: yellow;
+
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+
+
+            }
+
+            .it4{
+                padding-right: 3%;
+
+                h2{
+                    text-align: center;
+                    font-size: 3.5em;
+                    padding: 0px;
+                }
+
+                p{
+                    padding-top: 5%;
+                    text-align: justify;
+                    font-size: 1.4em;
+                }
+            }
+
+            h2{
+                text-align: center;
+                padding: 10% 0%;
+                font-size: 3em;
+                padding-bottom: 5%;
+            }
+
+            .it5{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+                    color: #000;
+
+                .itBox{
+                    padding: 3%;
+                    transition: 0.6s;
+                    box-shadow: 0px 0px 20px rgba(153,153,153,0.4);
+
+                    &:hover{
+                        box-shadow: 0px 0px 20px rgba(153,153,153,1);
+                    }
+
+                    p:first-child{
+                        padding-top: 5%;
+                        padding-bottom: 25%;
+                        text-align: center;
+                    }
+                }
+            }
+            }
+
+            @include treca{
+                margin-top: 18%;
+            }
+        
+    }
+}
+
+body{
+
+    .contactd{
+        margin: 4% 0%;
+        background-image: url("images/contact.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 20em;
+        
+        
+        
+
+        .contacth{
+            display:flex;
+            justify-content: center;
+            color:black;
+            font-size: 3em;
+            margin:5% 0%;
+
+
+             @include cetvrta{
+                 padding-top:5%;
+             }
+            @include peta{
+                color:red;
+                padding-top:5%;
+            }
+            
+    }
+
+    @include treca{
+        margin-top:5%;
+    }
+
+    @include peta{
+        margin-top:11%;
+    }
+}
+.forma2{
+    background-color: black;
+}
+
+.csred{
+   
+    
+
+    .p1{
+        color:red;
+        display:flex;
+        justify-content: center;
+        font-size: 2em;
+
+        @include peta{
+            font-size:1.3em;
+        }
+        
+    }
+
+    .p2{
+        text-align: justify;
+        font-size: 1.2em;
+        padding: 5%;
+
+        @include peta{
+            font-size:1em;
+        }
+    }
+}
+.help{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.modal2{
+    display:block;
+    justify-content: center;
+    width: 20%;
+    margin: 0px auto;
+
+    @include peta{
+        width:100%;
+        margin:10% 0%;
+    }
+}
+}
+
+body{
+
+    .tips1{
+        margin: 10% 0%;
+
+        h2{
+            text-align: center;
+            padding-bottom: 5%;
+        }
+
+        .tips2{
+
+            .tips4{
+
+                ol{
+
+                    li{
+                        margin: 10% 0%;
+                        text-align: justify;
+                        font-size: 1.2em;
+
+                        
+                    }
+                }
+            }
+
+            .tips5{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .tipsPic{
+                    width: 90%;
+
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        @include treca{
+            margin-top:20%;
+        }
+    }
+}
+
+body{
+
+    .lista{
+        font-size: 1.2em;
+        margin: 5%;
+    }
+    .kontis1{
+        margin:5% 0%;
+    }
+    .slika5{
+        width: 80%;
+        margin-left:10%;
+        border:2px solid black;
+
+        @include treca{
+            width: 70%;
+            margin-top:10%;
+        }
+    }
+    .inh{
+        margin:3%;
+        border-bottom: 2px solid orange;
+      width:18%;
+
+      @include prva{
+          width: 30%;
+      }
+      @include druga{
+        width: 35%;
+    }
+
+    @include treca{
+        width:45%;
+        margin-top:10%;
+    }
+
+    @include cetvrta{
+        width:65%;
+        margin-top:15%;
+    }
+    @include peta{
+        width:85%;
+        font-size:1.5em;
+        margin:25% auto;
+    }
+    }
+    .texti{
+        font-size:1.2em;
+        text-align: justify;
+        margin-bottom: 5%;
+        margin-left:1%;
+        width:80%;
+
+        @include treca{
+            
+            margin:5% auto;
+        }
+
+        
+    }
+    .texti2{
+        font-size:1.2em;
+        text-align: justify;
+
+        @include druga{
+            margin:0%;
+        }
+
+        @include treca{
+            
+            margin:10% auto;
+            font-size:1.1em;
+        }
+    
+    }
+    .abouts{
+        border:0.5em solid black;
+
+        @include prva{
+            margin-top: 10%;
+        }
+
+        @include druga{
+            margin-top: 20%;
+        }
+    }
+    .asl{
+        width: 80%;
+        margin-left: 20%;
+        border:0.5em solid black;
+
+       
+    }
+    .atext{
+        font-size: 1.2em;
+        text-align: justify; 
+
+        @include peta{
+            font-size:1.2em;
+        }
+    }
+    .texta1{
+        font-size: 1.2em;
+        text-align: justify;
+        border-top:1px solid orange;
+
+        @include druga{
+            font-size: 1.1em;
+        }
+
+        @include treca{
+            font-size:1.2em;
+        }
+        @include peta{
+            font-size:1.2em;
+        }
+    }
+    .ktext{
+        @include druga{
+            font-size: 1.1em;
+        }
+    }
+    #text4{
+        @include druga{
+            font-size: 1.2em;
+        }
+
+        @include peta{
+            font-size: 1em;
+        }
+    }
+    #text5{
+        @include druga{
+            font-size: 1em;
+        }
+        @include peta{
+            font-size:0.9em;
+            
+        }
+
+    }
+    .slikak{
+        @include treca{
+            width: 70%;
+            margin: 20px auto;
+            
+            
+        }
+    }
+    .kolona1{
+        @include treca{
+            margin: 30px;
+        }
+    }
+    .naslov1{
+        @include treca{
+            margin-right:42px;
+            width:100%;
+        }
+        
+}
+.modalb{
+    @include peta{
+        width: 30%;
+    }
+}
+.linkovi{
+    @include peta{
+        
+        font-size: 0.8em;
+    }
+    
+    
+}
+.after{
+    @include treca{
+        border-bottom: 1px solid orange;
+    }
+}
+
+.jobsh{
+
+    @include druga{
+    margin-top:10%;
+
+    }
+
+    @include treca{
+        margin-top:15%;
+
+    }
+
+    @include cetvrta{
+        margin-top:20%;
+
+    }
+    
+}
+
+.jtext{
+    @include treca{
+     text-align: center;
+    }
+}
+.ca{
+    @include cetvrta{
+       
+        font-size:0.75em;
+    }
+
+    @include peta{
+       
+        font-size:0.7em;
+    }
+}
+.op{
+
+    @include cetvrta{
+        padding:15%;
+    }
+    @include peta{
+        padding:20%;
+        font-size:0.9em;
+
+    }
+}
+.red1{
+    @include peta{
+        width: 100%;
+        margin:0px auto;
+    }
+}
+}
+
