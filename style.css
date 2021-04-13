@@ -7,7 +7,9 @@ body {
   position: relative;
   font-family: 'Pridi', serif;
 }
-
+h1{
+  color:whitesmoke;
+}
 body p {
   border-width: 4px 0;
 }
